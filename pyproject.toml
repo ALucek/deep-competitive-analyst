@@ -1,0 +1,13 @@
+[project]
+name = "competitive-analysis-agent"
+version = "0.1.0"
+description = "Competitive Analysis Deep Agent"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "deepagents==0.0.7",
+    "langchain-openai>=0.3.33",
+    "langchain>=0.3.27",
+    "langgraph-cli[inmem]>=0.4.2",
+    "tavily-python>=0.7.12",
+]
