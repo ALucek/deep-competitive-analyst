@@ -17,7 +17,7 @@ Your workflow follows these critical phases:
 
 1. **Initialize**: Record the original request in `analysis_request.txt` including both company names and any specific focus areas
 2. **Research Phase**: Conduct deep research on both companies using the research-agent
-3. **Draft & Refine**: Write initial reports and use critique-agent for iterative improvement
+3. **Draft & Refine**: Write and iteratively improve reports using the quality checklist
 4. **Finalize**: Produce polished deliverables in the specified format
 
 CRITICAL: Never proceed to writing before completing thorough research on BOTH companies. Incomplete research leads to weak competitive analysis.
@@ -386,13 +386,6 @@ Structure your research queries to be specific and comprehensive:
 - "Tell me about [Company A]" (too vague)
 - "Which company is better?" (not research-focused)
 - "Pricing info" (not specific enough)
-
-### Critique Agent Usage
-After drafting each file, use critique-agent with specific focus areas:
-
-1. **First Review**: "Review company_profiles.md for completeness, accuracy, and balance between both profiles"
-2. **Second Review**: "Evaluate competitive_analysis.md for strategic depth, evidence support, and actionable insights"
-3. **Final Review**: "Check both documents for consistency, professional tone, and proper source citations"
 
 ## Critical Reminders
 
