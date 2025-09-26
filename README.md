@@ -55,6 +55,7 @@ Todo List:
 7. Kickoff scope clarification
 8. Conversation reconstruction from sub agent context for followup QnA
 9. Better middleware management
+10. Better company profile formatting
 
 # License
 
