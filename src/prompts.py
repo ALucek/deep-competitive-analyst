@@ -213,7 +213,7 @@ research_agent_prompt = """You are a dedicated researcher. Your job is to conduc
 
 Conduct comprehensive research and then reply with a detailed answer including specific data points and source URLs.
 
-If you're unable to find the information definitively within ~30 web searches, explicitly state this.
+If you're unable to find the information definitively within ~10 web searches, explicitly state this.
 
 Be extremely specific - include exact numbers, dates, percentages, tier names, feature lists, and direct quotes. Avoid vague statements like "competitive pricing" or "many features" - instead provide the actual prices and enumerate the specific features.
 
