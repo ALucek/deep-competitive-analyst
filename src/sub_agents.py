@@ -3,7 +3,7 @@ from langchain.agents import create_agent
 from langchain.agents.middleware import SummarizationMiddleware
 from prompts import research_agent_prompt
 from tools import internet_search
-from model import sub_agent_llm
+from models import sub_agent_llm
 
 
 # Research Sub Agent Description

@@ -1,6 +1,6 @@
 from deepagents import create_deep_agent
-from model import agent_llm
-from sub_agent import research_sub_agent
+from models import agent_llm
+from sub_agents import research_sub_agent
 from prompts import competitive_analysis_prompt
 
 # Compile the Competitive Analysis Agent
