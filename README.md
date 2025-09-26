@@ -1,6 +1,6 @@
 # Deep Competitive Analyst
 
-<img src="dca_logo.png", width=400>
+<img src="dca_logo.png", width=100>
 
 # Overview
 
