@@ -2,7 +2,7 @@
 
 <img src="./dca_logo.png" width=200>
 
-The Deep Competitive Analyst is a 'deep agent' style LLM assistant built to automate the creation of company profiles and competitive analyses. Built on top of [deepagents](https://github.com/langchain-ai/deepagents), [LangGraph Platform](https://www.langchain.com/langgraph-platform), and [Perplexity Search](https://docs.perplexity.ai/getting-started/overview) the Deep Competitive Analyst can perform thorough research autonomously to create detailed business reports in a fraction of the time of a human.
+The Deep Competitive Analyst is a 'deep agent' style LLM assistant built to automate the creation of company profiles and competitive analyses. Built on top of [deepagents](https://github.com/langchain-ai/deepagents), [LangGraph Platform](https://www.langchain.com/langgraph-platform), and [Perplexity Search](https://docs.perplexity.ai/getting-started/overview), the Deep Competitive Analyst can perform thorough research autonomously to create detailed business reports in a fraction of the time of a human.
 
 Example output from the agent [can be viewed here.](./example_output/)
 
