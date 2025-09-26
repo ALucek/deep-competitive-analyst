@@ -1,6 +1,8 @@
 # Example Output
 
-This folder contains an example output from the Deep Competitive Analyst as of 09/26/2025 
+This folder contains an example output from the Deep Competitive Analyst as of 09/26/2025.
+
+This will be updated as improvements to the system are made, reflected in the date above.
 
 The following query was ran:
 
