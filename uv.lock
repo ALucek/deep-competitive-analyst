@@ -180,15 +180,17 @@ dependencies = [
     { name = "deepagents" },
     { name = "langchain" },
     { name = "langchain-openai" },
+    { name = "langgraph" },
     { name = "langgraph-cli", extra = ["inmem"] },
     { name = "tavily-python" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "deepagents", specifier = "==0.0.7" },
-    { name = "langchain", specifier = ">=0.3.27" },
-    { name = "langchain-openai", specifier = ">=0.3.33" },
+    { name = "deepagents", specifier = "==0.0.9" },
+    { name = "langchain", specifier = "==1.0.0a9" },
+    { name = "langchain-openai", specifier = "==0.3.33" },
+    { name = "langgraph", specifier = "==1.0.0a3" },
     { name = "langgraph-cli", extras = ["inmem"], specifier = ">=0.4.2" },
     { name = "tavily-python", specifier = ">=0.7.12" },
 ]
@@ -230,7 +232,7 @@ wheels = [
 
 [[package]]
 name = "deepagents"
-version = "0.0.7"
+version = "0.0.9"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain" },
@@ -238,9 +240,9 @@ dependencies = [
     { name = "langgraph" },
     { name = "langgraph-prebuilt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/20/ae/bce1472bbb56084a4d97fd21e21a797623cd1d23d52d18576e330d95e146/deepagents-0.0.7.tar.gz", hash = "sha256:1b0173f5d19b3ba0b0fffa0724ba6663951af4eff33367a8d2a2c7fae477678f", size = 23648 }
+sdist = { url = "https://files.pythonhosted.org/packages/16/21/7ac6d0c1bea3954faed8096e4702a2bbc63e2da5dc1add8e22437a1dd96e/deepagents-0.0.9.tar.gz", hash = "sha256:e686e855294b3b39e1fd134468a29f1ac6c2e5068fadd2e4ab18738d47876562", size = 23835 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bd/bb/391c80871a70ffe7aeaee24adfcbefc9735f34ff392931bcf73222628e66/deepagents-0.0.7-py3-none-any.whl", hash = "sha256:3efb1b6c3ee795e0306f5d546b7ea44ef8207ece83d09c8af2f680009d2ab9a8", size = 26731 },
+    { url = "https://files.pythonhosted.org/packages/19/41/5bc366814eb61eb54c071ef557ff51bdb0cc728f957ab303ce17247cb7b6/deepagents-0.0.9-py3-none-any.whl", hash = "sha256:68784b9f50e49ce4fb2bdaaf2406076493090e3a4482467ef4d2acdd525f84c7", size = 26770 },
 ]
 
 [[package]]
@@ -403,21 +405,21 @@ wheels = [
 
 [[package]]
 name = "langchain-anthropic"
-version = "1.0.0a1"
+version = "0.3.20"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anthropic" },
     { name = "langchain-core" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/db/0c/5e1f083c45d80a6dfb8715fd6a37387bc99d026d7d1f31addda5295f9bcb/langchain_anthropic-1.0.0a1.tar.gz", hash = "sha256:eed5c79143a7180f599ae228b8380b33c8e9b8d9792679fca61bb5ce55bcef20", size = 294231 }
+sdist = { url = "https://files.pythonhosted.org/packages/eb/0e/f402d31abc28875697f879738d26b5c44e459d1417d849d73b2f1ecc20bf/langchain_anthropic-0.3.20.tar.gz", hash = "sha256:8ad996817a051db1dbaa1b76d710ad2588b93b9bf3c4ac7ecf66c1d480f921fc", size = 306369 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/46/89/3534d21c92ed7aad6d0e7e702534bb53f055b8e36ec9f014374cd1f1ada7/langchain_anthropic-1.0.0a1-py3-none-any.whl", hash = "sha256:4af10bf3b9b754a1b26f4cb063511e5666f5d344b2acf68e688e6a6e5c7ec586", size = 34355 },
+    { url = "https://files.pythonhosted.org/packages/b3/f7/50a5794a876f8d4067a1392614ec0a26f39817fc63be06498a819a02e29d/langchain_anthropic-0.3.20-py3-none-any.whl", hash = "sha256:0b79aad346781d63af797af60b5aa9db7f95174a382712ee8fb2ad42573e2560", size = 31699 },
 ]
 
 [[package]]
 name = "langchain-core"
-version = "1.0.0a4"
+version = "0.4.0.dev0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jsonpatch" },
@@ -428,23 +430,23 @@ dependencies = [
     { name = "tenacity" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/67/2b/8e9ef668d3bba713cc98e586dfb1077f739cac7b8f68fa89fcbb79aa26e6/langchain_core-1.0.0a4.tar.gz", hash = "sha256:eaa507393f14a081a2468bd31b5ac6e8439929d226bf9406943623c8fca22ded", size = 609907 }
+sdist = { url = "https://files.pythonhosted.org/packages/ad/a8/a9595afdfdfa7c96c33d7ee0843de3d9bb42eecf5a6a4da7aa3d69237548/langchain_core-0.4.0.dev0.tar.gz", hash = "sha256:3b9539cbd71be7194a5f034bd47cb88ed72a7386a9f314918b2dc285254110c5", size = 612407 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/49/47/5c9c8952988bd59290371e43f3744bc10abc678e3d438111d861be94bc72/langchain_core-1.0.0a4-py3-none-any.whl", hash = "sha256:c8ae93a30f735c5c49276a2f619b80f5924677662570c7b3fc91ab9f07122fbf", size = 477704 },
+    { url = "https://files.pythonhosted.org/packages/82/f0/4e3aadcf164dd39e4105dc0024fdd28cb24f147e6b7a7c0f778ad0eaaa22/langchain_core-0.4.0.dev0-py3-none-any.whl", hash = "sha256:f4439e98c64ff109b06a46b294e6eafd9edf785f60c78f6444428d6a04bc143b", size = 468262 },
 ]
 
 [[package]]
 name = "langchain-openai"
-version = "1.0.0a2"
+version = "0.3.33"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
     { name = "openai" },
     { name = "tiktoken" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7b/64/ce4c7e0e9e75b137d1a8e036863f18045b53c861336e69c32c107f4109b1/langchain_openai-1.0.0a2.tar.gz", hash = "sha256:ce1f770f8423f771302749569f60dda4e9d011acfe5e316725acb1a0cff02d18", size = 803586 }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/66/4245ffe1fed8cd3812be9d228be50baa406cbb0ef5bd7cb1d98d82dcfe37/langchain_openai-0.3.33.tar.gz", hash = "sha256:2dec058332ea9e8977cd91df6515b95952e187ac7484f349c3fe91d936a92375", size = 784533 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c6/78/d7fa6a2c19b96b6a0c8b7f600febbd588a0b34d090cbbe64531c315a25c3/langchain_openai-1.0.0a2-py3-none-any.whl", hash = "sha256:ece037dbf0fec4fa2c51f480e6cda2eabf05811511f93023b345a22f6ffb233d", size = 76418 },
+    { url = "https://files.pythonhosted.org/packages/67/31/af0486b7ad8a49f3c5c852ca2b3a7f6d8526cc71a405045dd959c36ec5db/langchain_openai-0.3.33-py3-none-any.whl", hash = "sha256:2d52aab6d2af61da9bb9470616ce782128f4be59df965caee3dece30ae6b2bc4", size = 74961 },
 ]
 
 [[package]]
