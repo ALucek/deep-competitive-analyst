@@ -1,9 +1,8 @@
-import os
 from perplexity import Perplexity
 import perplexity
 
 # Initialize the Perplexity client
-perplexity_client = Perplexity(api_key=os.environ["PERPLEXITY_API_KEY"])
+perplexity_client = Perplexity()
 
 # Define the internet search tool
 def internet_search(
