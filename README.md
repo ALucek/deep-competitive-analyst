@@ -6,6 +6,8 @@ to include in the readme
 also do the readme here
 
 Still need to test more:
-- Make sure formatting is good
+
 - Make sure it saves the files to the file system
 - Try smaller models for the sub research
+
+HITL tool for main agent to ask?

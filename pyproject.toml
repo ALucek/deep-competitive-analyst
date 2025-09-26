@@ -10,5 +10,5 @@ dependencies = [
     "langchain==1.0.0a9",
     "langgraph-cli[inmem]>=0.4.2",
     "langgraph==1.0.0a3",
-    "tavily-python>=0.7.12",
+    "perplexityai>=0.11.0",
 ]
