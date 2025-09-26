@@ -5,7 +5,6 @@ from prompts import research_agent_prompt
 from tools import internet_search
 from models import sub_agent_llm
 
-
 # Research Sub Agent Description
 research_sub_agent_description = """Expert business intelligence researcher. Conducts deep-dive research on companies, products, pricing, and markets. Give focused queries on specific topics - for multiple topics, call multiple agents in parallel using the task tool."""
 
