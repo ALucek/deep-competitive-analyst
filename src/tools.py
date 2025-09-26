@@ -1,4 +1,3 @@
-# from langchain_core.tools import tool
 from tavily import TavilyClient
 from typing import Literal
 import os
@@ -6,7 +5,6 @@ import os
 tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
 
 # Define web search tool
-# @tool
 def internet_search(
     query: str,
     max_results: int = 5,
