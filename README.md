@@ -39,7 +39,7 @@ cd src
 uv run langgraph dev  
 ```
 
-The Deep Competitive Analyst will now be running locally via the langgraph platform and can be integrated into your own compatible interface. It is recommended to use the [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) for a quick local interface and local testing.
+The Deep Competitive Analyst will now be running locally via the langgraph platform and can be integrated into your own compatible interface. It is recommended to use LangSmith Studio for local testing.
 
 ## Contributing
 
