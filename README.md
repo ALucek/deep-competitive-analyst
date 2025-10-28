@@ -20,7 +20,7 @@ cd deep-competitive-analyst
 2. Install depencies:
 
 ```bash
-uv sync --prerelease allow
+uv sync
 ```
 
 3. Create a .env file with the following variables:
@@ -38,7 +38,7 @@ LANGSMITH_PROJECT=deep_competitive_analyst
 
 ```bash
 cd src
-uv run --prerelease allow langgraph dev  
+uv run langgraph dev  
 ```
 
 The Deep Competitive Analyst will now be running locally via the langgraph platform and can be integrated into your own compatible interface. It is recommended to use the [deep-agents-ui](https://github.com/langchain-ai/deep-agents-ui) for a quick local interface and local testing.
@@ -48,16 +48,15 @@ The Deep Competitive Analyst will now be running locally via the langgraph platf
 Contributions welcome! Feel free to submit a PR
 
 Todo List:  
-1. Standardize package versions pending official releases
-2. Dedicated front end
-3. File saving outside of state
-4. Better filtering KWARGS for search tool
-5. Test performance with different/smaller models
-6. Human in the loop tool for clarifications from main system
-7. Kickoff scope clarification
-8. Conversation reconstruction from sub agent context for followup QnA
-9. Better middleware management
-10. Better company profile formatting
+- Dedicated front end
+- File saving outside of state
+- Better filtering KWARGS for search tool
+- Test performance with different/smaller models
+- Human in the loop tool for clarifications from main system
+- Kickoff scope clarification
+- Conversation reconstruction from sub agent context for followup QnA
+- Better middleware management
+- Better company profile formatting
 
 ## License
 
