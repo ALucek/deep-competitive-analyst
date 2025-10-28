@@ -57,7 +57,7 @@ For each company, investigate:
 Prioritize these sources:
 1. Official company materials
 2. Recent news and press releases
-3. Customer reviews (G2, Capterra, TrustRadius)
+3. Customer reviews
 4. Industry reports and analyst coverage
 
 ## Deliverables

@@ -21,7 +21,7 @@ research_sub_agent_middleware = [
 research_sub_agent_graph = create_agent(
     model=sub_agent_llm,
     tools=[internet_search],
-    prompt=research_agent_prompt,   
+    system_prompt=research_agent_prompt,   
     middleware=research_sub_agent_middleware,
         ).with_config({"recursion_limit": 1000}) # Using a custom graph to pass a longer recursion limit
 
@@ -29,5 +29,5 @@ research_sub_agent_graph = create_agent(
 research_sub_agent = {
     "name": "research-agent",
     "description": research_sub_agent_description,
-    "graph": research_sub_agent_graph
+    "runnable": research_sub_agent_graph
 }

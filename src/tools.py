@@ -21,7 +21,6 @@ def internet_search(
     try:
         search_results = perplexity_client.search.create(
             query=query,
-            search_mode="web",
             max_results=5,
             max_tokens_per_page=2048,
             max_tokens=24576,
