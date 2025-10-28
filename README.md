@@ -8,8 +8,6 @@ Example output from the agent [can be viewed here.](./example_output/)
 
 ## Installation
 
-Deep Competitive Analyst relies on preview versions of LangChain, deepagents, and more. Setup and dependencies will be updated as these reliant capabilities are officially released.
-
 1. Clone the repository:
 
 ```bash
