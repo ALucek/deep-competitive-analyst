@@ -18,7 +18,7 @@ research_sub_agent_middleware = [
         messages_to_keep=20,
     ),
     ToolCallLimitMiddleware(
-        run_limit=20,
+        run_limit=15,
     ),
 ]
 
