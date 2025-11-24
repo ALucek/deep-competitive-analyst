@@ -5,7 +5,7 @@ description = "Competitive Analysis Deep Agent"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "deepagents==0.2.0",
+    "deepagents==0.2.8",
     "langchain-openai==1.0.1",
     "langchain==1.0.2",
     "langgraph-cli[inmem]>=0.4.4",
