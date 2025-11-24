@@ -57,8 +57,7 @@ For each company, investigate:
 Prioritize these sources:
 1. Official company materials
 2. Recent news and press releases
-3. Customer reviews
-4. Industry reports and analyst coverage
+3. Industry reports and analyst coverage
 
 ## Deliverables
 
@@ -94,7 +93,7 @@ Create THREE files following these exact templates:
 [Evidence-based competitive advantages]
 
 ## Weaknesses
-[Limitations from reviews and analysis]
+[Limitations from analysis]
 
 ## Customer Sentiment
 **Positive Themes:** [Common praise points]
