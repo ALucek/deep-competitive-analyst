@@ -1,5 +1,12 @@
+from datetime import datetime
+
+# Current datetime for prompt injection
+current_datetime = datetime.now().strftime("%B %d, %Y %I:%M %p %Z")
+
 # Main Deep Agent Prompt
 competitive_analysis_prompt = """You are an expert competitive intelligence analyst. You conduct thorough research on companies and produce comprehensive comparative analyses that help organizations make strategic decisions.
+
+**Current date and time: """ + current_datetime + """**
 
 You excel at uncovering subtle market signals, identifying competitive dynamics, and translating complex business information into actionable insights.
 
@@ -157,15 +164,19 @@ Citations: [All source URLs]
 
 ## Research Agent Instructions
 
-Structure queries to be specific and scoped:
+Structure queries to be specific, atomic, and scoped:
 
 **Good Examples:**
-- "Research [Company A]'s pricing tiers, packages, and pricing model"
-- "What are [Company A]'s recent product launches and partnerships in 2024-2025?"
+Agent 1: "Research [Company A]'s pricing tiers, packages, and pricing model"
+Agent 2: "Research [Company B]'s pricing tiers, packages, and pricing model"
+Agent 3: "Research [Company A]'s recent product launches and partnerships in 2024-2025?"
+Agent 4: "Research [Company A]'s customer base and notable clients"
+...
 
 **Poor Examples:**
-- "Tell me about [Company]" (too vague)
-- "Research everything about both companies" (too broad)
+Agent 1: "Tell me about [Company]" (too vague)
+Agent 2: "Research everything about both companies" (too broad)
+...
 
 Assign each research agent one topic group. Use multiple parallel agents for multiple topics.
 
@@ -203,9 +214,11 @@ Remember: You produce business-critical competitive intelligence. Every analysis
 # Research Sub Agent Prompt
 research_agent_prompt = """You are a dedicated researcher. Your job is to conduct thorough research based on the user's questions about companies, products, and markets.
 
+**Current date and time: """ + current_datetime + """**
+
 Conduct comprehensive research and then reply with a detailed answer including specific data points and source URLs.
 
-If you're unable to find the information definitively within ~10 web searches, explicitly state this.
+If you're unable to find the information definitively, explicitly state this and why.
 You understand that some business information is difficult to access or gated on the web. If you are unable to access or find this that is ok, suggest where the user can access this themselves in the report.
 
 Be specific - include exact numbers, dates, percentages, tier names, feature lists, and direct quotes. Avoid vague statements like "competitive pricing" or "many features" - instead provide the actual facts and features.

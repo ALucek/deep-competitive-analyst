@@ -12,6 +12,12 @@ def internet_search(query: str) -> str:
     """
     Internet search tool able to provide detailed search results and page content.
 
+    Search queries should follow these guidelines:
+    1. Use natural language queries — Write searches as complete, descriptive phrases rather than fragmented keywords. For example, use "latest developments in quantum computing error correction 2024" instead of "quantum computing news -ads site:arxiv.org".
+    2. Be specific in a single query — Include all relevant context (topic, timeframe, domain) directly in your search phrase. For example, "OpenAI GPT-5 announcement features March 2025" rather than running multiple searches.
+    3. Avoid search engine operators — Do not use syntax like `site:`, `filetype:`, `-`, `OR`, or quotation marks for exact matching. The API handles relevance internally and these operators often degrade results.
+    4. One clear intent per search — Each query should answer one specific question. Instead of "AI regulations EU and US comparison pros cons," split into focused searches like "European Union AI Act key requirements 2024" and "United States federal AI regulation policies 2024".
+
     Args:
         query: The search query to perform.
     
