@@ -5,9 +5,9 @@ from ratelimit import limits, sleep_and_retry
 # Initialize the Perplexity client
 perplexity_client = Perplexity()
 
-# Define the internet search tool (rate limited to 3 req/sec for Perplexity API)
+# Define the internet search tool
 @sleep_and_retry
-@limits(calls=3, period=1)
+@limits(calls=3, period=1) # Rate limited to 3 req/sec for Perplexity API
 def internet_search(query: str) -> str:  
     """
     Internet search tool able to provide detailed search results and page content.
