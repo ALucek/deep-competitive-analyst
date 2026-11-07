@@ -4,6 +4,11 @@ from ratelimit import limits, sleep_and_retry
 
 # Initialize the Perplexity client
 perplexity_client = Perplexity()
+# Identify this project in requests sent to the Perplexity API
+if perplexity_client.base_url.host == "api.perplexity.ai":
+    perplexity_client = perplexity_client.with_options(
+        default_headers={"X-Pplx-Integration": "deep-competitive-analyst"}
+    )
 
 # Define the internet search tool
 @sleep_and_retry
